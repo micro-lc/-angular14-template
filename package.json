@@ -1,15 +1,16 @@
 {
   "name": "mia_template_service_name_placeholder",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "ng": "ng",
-    "lint": "ng lint",
     "start": "ng serve",
     "build": "ng build && node plugins/post-html.js",
     "watch": "ng build --watch --configuration development",
-    "test": "echo \"TODO\""
+    "test": "echo \"TODO\"",
+    "lint": "ng lint",
+    "coverage": "npm run test -- --no-watch --code-coverage"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
